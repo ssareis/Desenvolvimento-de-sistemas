@@ -7,15 +7,16 @@ public class Exercicio19 {
      public static void main(String[] args) {
        Scanner teclado = new Scanner (System.in);
        System.out.println("Escreva seu salário fixo:  ");
-       float fixo = teclado.nextFloat();
+       double fixo = teclado.nextDouble();
        System.out.println("Escreva seu número de carros vendidos:  ");
-       float carros = teclado.nextFloat();
+       double carros = teclado.nextDouble();
        System.out.println("Escreva o valor total de suas vendas:  ");
-       float vendas = teclado.nextFloat();
+       double vendas = teclado.nextDouble();
        System.out.println("Escreva o valor que você recebe por carro vendido:  ");
-       float vendaporcarro = teclado.nextFloat();
+       double vendaporcarro = teclado.nextDouble();
        
-       float calculo = fixo + vendaporcarro * carros + vendas;
+       double calculo = fixo + vendaporcarro * carros + vendas * 0.05;
+       
 
         System.out.println("Seu salário final é de:  " + calculo);
     }
