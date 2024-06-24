@@ -1,19 +1,23 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+import java.util.Scanner;
 
-/**
- *
- * @author CAMARGO
- */
 public class laços10 {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite um número inteiro entre 1 e 10: ");
+        int numero = scanner.nextInt();
+
+        while (numero < 1 || numero > 10) {
+            System.out.println("Número fora do intervalo permitido (1 a 10). Tente novamente.");
+            System.out.print("Digite um número inteiro entre 1 e 10: ");
+            numero = scanner.nextInt();
+        }
+
+        System.out.println("Tabuada do " + numero + ":");
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(numero + " x " + i + " = " + (numero * i));
+        }
+
+        scanner.close();
     }
-    
 }

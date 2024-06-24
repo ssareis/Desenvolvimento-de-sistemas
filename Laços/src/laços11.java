@@ -1,19 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+import java.util.Scanner;
 
-/**
- *
- * @author CAMARGO
- */
 public class laços11 {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner scanner = new Scanner(System.in);
+
+        int n;
+        do {
+            System.out.print("Digite um número maior que zero: ");
+            n = scanner.nextInt();
+        } while (n <= 0);
+
+        for (int i = 1; i <= n; i++) {
+            System.out.print(i + " ");
+        }
+
+        scanner.close();
     }
-    
 }

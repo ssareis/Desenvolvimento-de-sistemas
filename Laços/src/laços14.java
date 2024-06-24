@@ -1,19 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-
-/**
- *
- * @author CAMARGO
- */
 public class laços14 {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int populacaoA = 80000;
+        double taxaCrescimentoA = 0.03; // 3% ao ano
+        int populacaoB = 200000;
+        double taxaCrescimentoB = 0.015; // 1.5% ao ano
+        int anos = 0;
+
+        while (populacaoA <= populacaoB) {
+            populacaoA += (int) (populacaoA * taxaCrescimentoA);
+            populacaoB += (int) (populacaoB * taxaCrescimentoB);
+            anos++;
+        }
+
+        System.out.println("Serão necessários " + anos + " anos para que a população do país A ultrapasse ou iguale a população do país B.");
     }
-    
 }

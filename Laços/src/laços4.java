@@ -1,19 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+import java.util.Scanner;
 
-/**
- *
- * @author CAMARGO
- */
 public class laços4 {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        double populacaoA = 80000;
+        double crescimentoA = 0.03;
+        double populacaoB = 200000;
+        double crescimentoB = 0.015;
+        int anos = 0;
+
+        while (populacaoA <= populacaoB) {
+            populacaoA *= (1 + crescimentoA);
+            populacaoB *= (1 + crescimentoB);
+            anos++;
+        }
+
+        System.out.println("Número de anos necessários para A ultrapassar ou igualar B: " + anos);
     }
-    
 }
